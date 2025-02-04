@@ -1,36 +1,41 @@
 # Core dependencies
-streamlit==1.39.0
+streamlit==1.41.1
 numpy==1.26.4
-opencv-python>=4.8.0
-pillow==10.4.0
+opencv-python==4.9.0.80
+pillow==10.2.0
 
 # MediaPipe for pose estimation and landmark detection
-mediapipe>=0.10.0
+mediapipe==0.10.9
 
 # 3D processing and mesh generation
-trimesh>=4.0.0
-pyrender>=0.1.45
-pyglet<2.0
-pytorch3d>=0.7.0
-torch>=2.0.0
-torchvision>=0.15.0
+trimesh==4.0.5
+pyrender==0.1.45
+pyglet==1.5.27  # Keep <2.0 for compatibility
+pytorch3d==0.7.5
+torch==2.2.0
+torchvision==0.17.0
 
 # Deep learning and computer vision
-tensorflow>=2.13.0
-tensorflow-hub>=0.14.0
+tensorflow==2.15.0
+tensorflow-hub==0.15.0
 
 # Image processing
-scikit-image>=0.21.0
+scikit-image==0.22.0
 
 # 3D visualization
-open3d>=0.17.0
-plotly==5.24.1
+open3d==0.17.0
+plotly==5.18.0
 
 # Utility packages
-scipy==1.14.1
-pandas==2.2.3
-matplotlib==3.10.0
+scipy==1.12.0
+pandas==2.2.0
+matplotlib==3.8.2
 
-# Optional but recommended for better performance
-cuda-python>=12.0  # If using NVIDIA GPU
-cupy>=12.0        # If using NVIDIA GPU
+# Development tools
+black==24.1.1
+flake8==7.0.0
+pytest==8.0.0
+mypy==1.8.0
+
+# Rich for improved logging
+rich==13.9.4
